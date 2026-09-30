@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protegiendo al Elefante Africano (Bootstrap)</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-left">
+            <img src="elefantejpg.jpg" alt="Logo Elefante" class="rounded-circle mb-2 mb-md-0 mr-md-3" style="width:80px;height:80px;object-fit:cover;">
+            <div>
+                <h1 class="h2 mb-0">Elefante Africano</h1>
+                <p class="mb-0">Protegiendo al gigante de la sabana</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://youtu.be/dpDWHmx25V8?si=W_TqSRbtJN3ybzc7">El Dilema de los Elefantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.nationalgeographicla.com/animales/2021/03/las-dos-especies-de-elefantes-africanos-estan-en-peligro-y-para-una-de-estas-la-situacion-es-critica">Documental</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4" id="inicio">
+        <div class="row">
+
+            <section class="col-12 col-lg-8" id="especies">
+                <h2 class="mb-3">Especie en Riesgo</h2>
+
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="h4">1. El Elefante Africano (Loxodonta africana)</h3>
+                        <img src="africano.jpg" alt="Elefante Africano" class="img-fluid rounded mx-auto d-block my-3">
+                        <p>El elefante africano es el animal terrestre más grande del mundo. A pesar de su tamaño e importancia para el ecosistema de la sabana, su población ha disminuido drásticamente debido a la caza furtiva por sus colmillos de marfil y la pérdida de su hábitat natural.</p>
+                        <ul>
+                            <li><strong>Hábitat:</strong> Sabanas, bosques y desiertos de África Subsahariana</li>
+                            <li><strong>Población estimada:</strong> Alrededor de 415,000 ejemplares</li>
+                            <li><strong>Principal amenaza:</strong> Caza furtiva por marfil y conflicto con humanos</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="h4">2. El Papel del Elefante en el Ecosistema</h3>
+                        <img src="sabana.avif" alt="Manada de elefantes en la sabana" class="img-fluid rounded mx-auto d-block my-3">
+                        <p>Los elefantes son conocidos como "ingenieros de ecosistemas": al derribar árboles y abrir claros, permiten el crecimiento de pastizales y ayudan a dispersar semillas por grandes distancias, beneficiando a cientos de especies que comparten su hábitat.</p>
+                    </div>
+                </article>
+
+                <section id="estadisticas" class="mb-4">
+                    <h3 class="h4">Estado de Conservación Global</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped bg-white">
+                            <thead class="thead-dark">
+                                <tr><th>Especie</th><th>Estado UICN</th><th>Región</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Elefante Africano de Sabana</td><td class="text-danger font-weight-bold">En Peligro</td><td>África</td></tr>
+                                <tr><td>Elefante Africano de Bosque</td><td class="text-danger font-weight-bold">En Peligro Crítico</td><td>África Central</td></tr>
+                                <tr><td>Elefante Asiático</td><td class="text-danger font-weight-bold">En Peligro</td><td>Asia</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </section>
+
+            <aside class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="h5">¿Cómo ayudar?</h3>
+                        <p>Apoya organizaciones dedicadas a combatir la caza furtiva y proteger los corredores naturales de los elefantes.</p>
+                        <hr>
+                        <h3 class="h5">Suscripción al Boletín</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="nom">Nombre:</label>
+                                <input type="text" class="form-control" id="nom" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo Electrónico:</label>
+                                <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com" required>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-block">Unirme</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 Guardianes del Elefante Africano - Desarrollado para la materia de Aplicaciones Web</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

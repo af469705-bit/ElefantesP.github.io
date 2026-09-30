@@ -1,0 +1,169 @@
+/* ===== Punto 2: responsiva con Media Queries (mobile-first) ===== */
+* { 
+box-sizing: border-box; }
+body { margin: 0; 
+font-family: Arial, Helvetica, sans-serif;
+color: #2b2b2b;
+background: #f4efe6;
+line-height: 1.5; }
+img { max-width: 100%;
+height: auto;
+display: block; 
+}
+.encabezado { 
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center; 
+gap: 10px; padding: 16px;
+ background: #5a3e2b;
+  color: #fff; 
+}
+.logo img {
+width: 80px;
+height: 80px;
+object-fit: cover;
+border-radius: 50%; 
+}
+.titulo-principal h1 {
+margin: 0; 
+font-size: 1.6rem; 
+}
+.titulo-principal p {
+margin: 4px 0 0; 
+}
+
+/* Navegación (móvil: vertical) */
+.navegacion { 
+background: #8b5e3c; 
+}
+.navegacion ul { 
+list-style: none; 
+margin: 0; padding: 0; 
+display: flex; 
+flex-direction: column; 
+}
+.navegacion a {
+display: block; 
+padding: 12px 16px; 
+color: #fff; 
+text-decoration: none; 
+border-bottom: 1px solid rgba(255,255,255,.2); 
+}
+.navegacion a:hover { 
+background: #6d4a2f; 
+}
+
+/* Contenido (móvil: una columna) */
+.contenedor-principal { 
+display: flex; 
+flex-direction: column; 
+gap: 20px; padding: 16px; 
+max-width: 1200px; margin: 0 auto; 
+}
+.contenido-primario { 
+width: 100%; 
+}
+.barra-lateral { 
+width: 100%; background: #fff; 
+padding: 16px; border-radius: 8px; 
+}
+.tarjeta-especie { 
+background: #fff; 
+padding: 16px; 
+margin-bottom: 20px; 
+border-radius: 8px; 
+}
+.tarjeta-especie img { 
+margin: 10px auto; 
+border-radius: 6px; 
+}
+#estadisticas { 
+overflow-x: auto; 
+}
+.tabla-datos { 
+width: 100%; 
+border-collapse: collapse; 
+background: #fff; 
+}
+.tabla-datos th, .tabla-datos td { 
+padding: 10px; 
+border: 1px solid #ccc; 
+text-align: left; 
+}
+.tabla-datos th { 
+background: #5a3e2b; 
+color: #fff; 
+}
+.alerta { 
+color: #b00020; 
+font-weight: bold; 
+}
+.formulario-boletin label { 
+display: block; margin-top: 10px; 
+font-weight: bold; 
+}
+.formulario-boletin input { 
+width: 100%; 
+padding: 10px; 
+margin-top: 4px; 
+border: 1px solid #aaa; 
+border-radius: 4px; 
+}
+
+.formulario-boletin button { 
+width: 100%; margin-top: 14px; 
+padding: 12px; border: 0; 
+border-radius: 4px; background: #5a3e2b; 
+color: #fff; 
+font-size: 1rem; 
+cursor: pointer; 
+}
+
+.pie-pagina { 
+text-align: center; 
+padding: 16px; background: #5a3e2b; 
+color: #fff; 
+}
+
+@media (min-width: 768px) {
+  .encabezado { 
+flex-direction: row; 
+justify-content: center; 
+text-align: left; 
+gap: 20px; 
+}
+
+  .titulo-principal h1 { 
+  font-size: 2.2rem; 
+}
+
+  .navegacion ul { 
+  flex-direction: row; 
+  justify-content: center; 
+}
+
+  .navegacion a { 
+  border-bottom: 0; 
+  padding: 14px 22px; 
+}
+
+  .tarjeta-especie img { 
+    max-width: 70%; 
+  }
+
+}
+@media (min-width: 1024px) 
+{
+  .contenedor-principal { 
+  flex-direction: row; 
+  align-items: flex-start; 
+}
+  .contenido-primario { 
+    flex: 0 0 70%; 
+  }
+  .barra-lateral { 
+  flex: 1; 
+  position: sticky; 
+  top: 16px; }
+}
